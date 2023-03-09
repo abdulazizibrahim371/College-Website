@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>University Website Design</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.jfif"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="index.html">HOME</a> </li>
+                    <li> <a href="About.html.html">ABOUT</a> </li>
+                    <li> <a href="course.html">COURSE</a> </li>
+                    <li> <a href="Blog.html">BLOG</a> </li>
+                    <li> <a href="contact.html">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>Contact Us</h1>
+    </section>
+    
+<section class="footer">
+    <h4>About Us</h4>
+    <p>All the above information provided speaks all about our campus. A brief summary is just to <br>
+        say that we are out of doubt the best institution in the world absolutely.
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made <i class="fa fa-heart-o"></i> by Abdul Aziz Ibrahim. Web Developer</p>
+</section>
+<!------Contact Us------>
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4046761.2052085414!2d-3
+        .2754649854113365!3d7.9039237398429805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x
+        fd75acda8dad6c7%3A0x54d7f230d093d236!2sGhana!5e0!3m2!1sen!2sgh!4v1647119211263!5m2!1sen!2sgh"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Tamale, home</h5>
+                        <p>My hometown</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+233 559622174</h5>
+                        <p>From Monday to Friday</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>abdulaziz@gmail.com</h5>
+                        <p>Email Us</p>
+                    </span>
+                </div>
+                </div>
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post" class="contact-form" >
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter email address" required>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message" placeholder="Enter your subject"></textarea>
+                        <button type="submit" class="hero-btn red-btn"> Send a message</button>
+                    </form>
+            </div>
+        </div>
+    </section>
+   <!---------Javascript code for toggle menu--------> 
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right= "-200px";
+        }
+    </script>
+    </body>
+</html>
